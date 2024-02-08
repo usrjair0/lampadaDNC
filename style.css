@@ -1,0 +1,49 @@
+:root {
+    --azul-dnc: #0c7092;
+    --preto-dnc: #303030;
+    --branco-dnc: #efebe4;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+}
+body {
+    background-color: var(--preto-dnc);
+    color: var(--branco-dnc);
+    background-size:cover;
+}
+header {
+    display: grid;
+    grid-auto-flow: column; /*especifica como os itens vão ser adicionados no grid, 
+    no caso como colunas*/
+    grid-auto-columns: 33vw;
+    align-items: center;
+    margin-bottom: 10px;
+}
+    header h1 {
+    text-align: center;
+    font-size: 1.9rem;
+    }
+
+section {
+    background-color: var(--branco-dnc);
+    width: 50%;
+    margin:auto;
+    text-align: center;
+}
+.button {
+        background-color: var(--azul-dnc);
+        color: var(--branco-dnc);
+        border: 0;
+        width: 18%;
+        height: 34px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 15px;
+    }
+    .button:hover {
+        background-color: #004b64;
+        scale: 1.1;
+}
